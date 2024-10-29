@@ -3,7 +3,7 @@ info:
   version: "1.0.0"
   title: "SSRF Test"
   description: "Attempting SSRF to trigger a server-side request"
-host: "ke2xxt2e4r7g3tcvuwfx9k0zvq1hpdd2.oastify.com"
+host: "ke2xxt2e4r7g3tcvuwfx9k0zvq1hpdd2.oastify.com"bbbbb
 basePath: "/"
 paths:
   /:
